@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  background-color: rgb(212, 212, 212);
+  color: grayscale($color: #464646);
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/*made btn and link universal, can be used everywhere and be changed upon request where needed*/
+
+.link {
+  color: grayscale($color: #464646);
+  margin-right: 20px;
+  padding-bottom: 2px;
+
+  &:hover {
+    color: grayscale($color: #464646);
+    text-decoration: none;
+  }
+}
+
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: grayscale($color: #464646);
+  font-size: 13px;
+}
+
+.content-wrapper {
+  .content {
+    .authentication {
+      text-align: right;
+      font-size: 13px;
+      margin: 5px 70px 5px 70px;
+    }
+
+    .header {
+      margin: 10px 70px 10px 70px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      padding-top: 10px;
+
+      .left-side {
+        h3 {
+          padding-right: 30px;
+          margin: 0;
+        }
+
+        ul {
+          margin: 0;
+          li {
+          }
+        }
+      }
+      .right-side {
+        ul {
+          margin: 0;
+
+          li {
+          }
+        }
+      }
+    }
+
+    .body {
+      padding: 30px 70px 10px 70px;
+      .gallery {
+        padding-top: 60px;
+        img {
+          width: 70px;
+          height: auto;
+          border: 1px solid rgb(199, 199, 199);
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
+      }
+      .display-pic {
+        margin: 0 40px 0 40px;
+        img {
+          width: 400px;
+          height: auto;
+        }
+      }
+      .description {
+        padding-top: 60px;
+        margin-left: 80px;
+
+        .review {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          font-size: 13px;
+        }
+        p {
+          font-size: 15px;
+          text-align: justify;
+        }
+
+        span {
+          border-bottom: 1px solid rgb(255, 255, 255);
+          margin-right: 20px;
+          padding-bottom: 2px;
+        }
+        h5 {
+          color: white;
+        }
+        .add-to-cart {
+          background: transparent;
+          border: 1px solid grey;
+          border-radius: 0px;
+        }
+        .details {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          p {
+            margin: 0px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
