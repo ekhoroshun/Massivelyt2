@@ -10,18 +10,19 @@ class Header extends Component {
 	render() {
 		return [
 			<div key="authentication" className="authentication">
+                <ul className="list-inline list-unstyled">
 				<Link className="link" to="/">
-					Sign Up
+					<li className="list-inline-item">Sign Up</li>
 				</Link>
 				<Link className="link" to="/">
-					Login
+					<li className="list-inline-item">Login</li>
 				</Link>
+                </ul>
 			</div>,
 			<div key="header" className="row header justify-content-between">
 				<div className="d-flex align-items-center left-side">
 					<h3>THE HORSE</h3>
-
-					<ul className="list-inline list-unstyled">
+                        <ul className="list-inline list-unstyled">
 						<Link to="/" className="link">
 							<li className="list-inline-item">Time Tellers</li>
 						</Link>
@@ -36,7 +37,7 @@ class Header extends Component {
 
 				<div className="d-flex align-items-center right-side">
 					<ul className="list-inline list-unstyled">
-						<Link to="/" className="link">
+						<Link to="/" className="link ">
 							<li className="list-inline-item">Lookbook</li>
 						</Link>
 						<Link to="/" className="link">
